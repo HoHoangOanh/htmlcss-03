@@ -233,3 +233,125 @@ a {
     line-height: 1.23;
     color: #171100;
 }
+
+/* Popular */
+.popular {
+    margin-top: 200px;
+}
+.popular-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 55px;
+}
+.popular .content {
+    width: 458px;
+}
+.popular .heading {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 3.8rem;
+    line-height: 1.26;
+    color: #171100;
+    margin-bottom: 16px;
+}
+.popular .popular-content .desc {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #5f5b53;
+}
+.popular .cta-btn {
+    display: flex;
+}
+.popular .cta-left,
+.popular .cta-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    border-radius: 50%;
+}
+.popular .cta-left {
+    border: 1px solid #ffb900;
+}
+.popular .cta-right {
+    background: var(--primary-color);
+}
+
+/* Popular-item */
+.popular-item {
+    display: flex;
+    justify-content: space-between;
+}
+.popular-courses {
+    width: 370px;
+    background: #ffffff;
+    box-shadow: 0px 18px 36px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+}
+.popular-courses .item-content {
+    padding: 16px;
+}
+.popular .item-rate {
+    display: flex;
+    justify-content: space-between;
+}
+.popular .item-rate .item-label {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #171100;
+    margin-bottom: 6px;
+}
+.popular .item-content .item-desc {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #5f5b53;
+}
+.popular .star-rate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.popular .star-rate .star {
+    margin-right: 6px;
+}
+.popular .star-rate p {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: var(--primary-color);
+}
+.popular .star-rate .star {
+    width: 18px;
+    height: 18px;
+}
+.popular .item-book {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+.popular .item-price {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #171100;
+}
+
+.popular .book-btn {
+    width: 118px;
+    line-height: 50px;
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: #ffffff;
+    cursor: pointer;
+}
+.book-active {
+    background: #FFB900;
+    color: #FFFFFF;
+}
