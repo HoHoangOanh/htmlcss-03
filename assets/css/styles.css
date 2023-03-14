@@ -454,16 +454,18 @@ a {
 
 /* Features-1 */
 .feature {
-    margin-top: 200px;
+    margin-top: 135px;
+    padding: 65px 0;
 }
 .feature-content {
     display: flex;
 }
 .feature-img {
     display: flex;
-    gap: 30px;
+    gap: 0 30px;
     margin-right: 130px;
 }
+/* img:first-child */
 .feature-img1,
 .feature-img2 {
     width: 270px;
@@ -477,33 +479,32 @@ a {
 .feature-img2 {
     margin-bottom: 34px;
 }
-.feature .feature-time,
+.feature-1 .feature-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
 .feature .feature-desc {
     margin-top: 16px;
+}
+.feature .feature-time,
+.feature .feature-desc {    
     margin-bottom: 32px;
     font-size: 1.6rem;
     line-height: 1.75;
     color: #5f5b53;
 }
 .feature .btn-feature {
-    width: 137px;
-    height: 50px;
+    min-width: 137px;
     background: var(--primary-color);
     border-radius: 26px;
-    font-weight: 600;
-    font-size: 1.6rem;
-    line-height: 1.75;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     color: #ffffff;
 }
 
 /* Feature-2 */
 .feature-2 {
     margin-top: 200px;
-}
-.feature-2 .body {
     display: flex;
     /* justify-content: space-between; */
 }
@@ -533,95 +534,125 @@ a {
 
 /* Blog */
 .blog {
-    margin-top: 200px;
+    margin-top: 135px;
     background: #fffcf4;
     padding: 96px 0;
-}
-.blog .blog-list {
-    margin-bottom: 38px;
-    display: flex;
-    justify-content: space-between;
-}
-.blog .blog-item {
-    width: 370px;
-    border-radius: 16px 16px 0px 0px;
-    background: #fff;
-}
-.blog-item .news-content {
-    padding-left: 20px;
-    padding-right: 20px;
 }
 .blog .info {
     text-align: center;
 }
 .blog .desc {
     width: 448px;
-    margin-top: 16px;
-    margin-bottom: 55px;
+    margin: 16px auto 55px auto;
     font-size: 1.6rem;
     line-height: 1.75;
-    text-align: center;
-    display: inline-block;
+    /* display: inline-block;canh giua */
     color: #696262;
 }
-.blog .blog-news {
+.blog .blog-list {
+    margin-bottom: 38px;
+    display: flex;
+    gap: 30px;
+    overflow: hidden;
+}
+.blog .blog-item {
+    flex-shrink: 0;
+    width: calc(33.33% - 20px);    
+    border-radius: 16px 16px 0px 0px;
+    background: #fff;
     border-radius: 16px;
+    border: 1px solid #e2dfda;
+    transition: all ease 0.3s;
+    transform: translateX(-100%);
 }
-.blog .blog-img {
-    margin-bottom: 20px;
-    border-top-right-radius: 16px;
-    border-top-left-radius: 16px;
+.blog-item .blog-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 16px 16px 0px 0px;
 }
+.blog .blog-item:hover {
+    border: transparent;
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
+    /* cursor: pointer; */
+}
+.blog-item .news-content {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 28px;
+}
+
 .blog .blog-time {
     display: flex;
     align-items: center;
 }
-.blog .dot {
+
+.blog .news-content .date {
+    position: relative;
+    padding-bottom: 12px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #5f5b53;
+}
+.blog .news-content .date::before {
+    content: "";
+    display: inline-block;
     width: 6px;
     height: 6px;
     border-radius: 50%;
     background: var(--primary-color);
     margin-right: 4px;
 }
-.blog .time-update {
-    font-size: 1.4rem;
-    line-height: 1.86;
-    color: #5f5b53;
-}
-.blog .spe {
+.blog .news-content .date::after {
+    position: absolute;
+    left: 0;
+    right: -27px;
+    bottom: 0;
+    content: "";
+    display: inline-block;
     width: 160px;
-    height: 1px;
-    margin-top: 12px;
-    margin-bottom: 12px;
+    height: 1px;   
     background: #e2dfda;
     border-radius: 0.5px;
 }
-.blog .title a{
+
+.blog .news-content .title a{
+    display: inline-block;    
+    margin-top: 12px;
     font-weight: 600;
     font-size: 1.6rem;
     line-height: 1.75;
     color: #171100;    
 }
+.blog .blog-item .btn {    
+    font-size: 1.4rem;
+}
 .btn-blog {
-    width: 118px;
     height: 50px;
     border-radius: 25px;
     margin-top: 12px;
-    margin-bottom: 28px;
 }
-.btn-blog.active {
+.btn-blog:hover {
     background: var(--primary-color);
 }
 .blog .blog-dots {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 6px;
 }
+
 .blog-dots .dot {
+    border-radius: 50%;
     width: 6px;
     height: 6px;
     background: #5F5B53;
+    cursor: pointer;
 }
 .blog-dots .dot.active {
     background: var(--primary-color);
+    cursor: default;
 }
