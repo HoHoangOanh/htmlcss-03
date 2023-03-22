@@ -378,7 +378,7 @@ a {
 
 /* Member */
 .member {
-    margin-top: 103px;
+    margin-top: 273px;
 }
 .member__heading {
     margin-bottom: 38px;
@@ -387,7 +387,7 @@ a {
 .member__btn {
     display: inline-block;
     margin-left: calc(50% - 102.5px);
-    margin-bottom: 85px;
+    margin-bottom: 70px;
 }
 .member__list {
     display: flex;
