@@ -583,9 +583,15 @@ a {
 }
 .appointment__heading {
     letter-spacing: -0.02em;
-    margin-bottom: 38px;
 }
-.appointment__desc { 
+.appointment__spe {    
+    margin-top: 18px;
+    margin-bottom: 20px;
+    width: 17%;
+    height: 2px;
+    border-color: var(--dark-bg);
+}
+.appointment__desc {     
     display: block;  
     margin: auto;
     width: 76%; 
