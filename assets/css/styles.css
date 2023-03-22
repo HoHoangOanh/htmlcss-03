@@ -421,7 +421,7 @@ a {
     align-items: center;
     justify-content: center;
     gap: 18px;
-    margin-bottom: 170px;
+    margin-bottom: 265px;
 }
 .member__action--left,
 .member__action--right {
@@ -445,4 +445,41 @@ a {
     color: #fff;
     border: var(--dark-bg);
     cursor: pointer;
+}
+
+/* Install */
+.install {
+    padding-bottom: 170px;
+}
+.install__body {
+    height: 427px;
+    background: var(--dark-bg);
+    display: flex;
+    padding-top: -95px;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 75px;
+    border-radius: 4px;
+}
+.install__img {
+    margin-top: -95px;
+}
+.install__content {
+    margin-left: 160px;
+    padding-top: 76px;
+}
+.install__header {
+    margin-bottom: 18px;
+    color: #FFFFFF;
+}
+.install__desc {
+    font-weight: 300;
+font-size: 1.8rem;
+line-height: 1.67;
+color: #FFFFFF;
+margin-bottom: 38px;
+}
+.install__action {
+    display: flex;
+    gap: 30px;
 }
