@@ -570,3 +570,33 @@ a {
     cursor: pointer;
     border-color: var(--dark-bg);
 }
+
+/* Appointment */
+.appointment {
+    margin-bottom: 170px;
+}
+.appointment__body {
+    width: 100%;
+    padding: 100px 178px;
+    text-align: center;
+    background: var(--think-bg);
+}
+.appointment__heading {
+    letter-spacing: -0.02em;
+    margin-bottom: 38px;
+}
+.appointment__desc { 
+    display: block;  
+    margin: auto;
+    width: 76%; 
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    text-align: center;
+    color: #575f66;
+    margin-bottom: 38px;
+}
+.appointment__btn {
+    display: inline-block;
+    margin: auto;
+}
