@@ -54,6 +54,7 @@ a {
 .heading.lv1 {
     font-weight: 600;
     font-size: 5rem;
+    line-height: 1.2;
 }
 .heading.lv2 {
     font-weight: 600;
@@ -378,7 +379,7 @@ a {
 
 /* Member */
 .member {
-    margin-top: 273px;
+    margin-top: 253px;
 }
 .member__heading {
     margin-bottom: 38px;
