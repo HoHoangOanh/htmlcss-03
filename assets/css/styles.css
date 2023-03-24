@@ -297,14 +297,12 @@ a {
     background: var(--think-bg);
     padding: 100px 0;
 }
-.method__info .desc {
-    width: 40%;
-    margin-top: 18px;
+.method__info {
     margin-bottom: 86px;
-    font-weight: 300;
-    font-size: 1.8rem;
-    line-height: 1.67;
-    color: #575f66;
+}
+.section__desc.method__desc {
+    width: 468px;
+    margin-top: 18px;        
 }
 .method__list {
     display: flex;
@@ -313,12 +311,14 @@ a {
 .method__item {
     padding: 43px;
     border: 16px solid #eaf6ff;
+    border-radius: 4px;
     background: #ffffff;
+    transition: all linear 0.2s;
 }
 .method__item:hover {
     border: 16px solid var(--dark-bg);
-    transform: translatey(-16px);
-    transition: all linear 0.2s;
+    border-radius: 4px;
+    transform: translatey(-16px);    
     cursor: pointer;
 }
 .method__label {
@@ -330,6 +330,7 @@ a {
     color: #10375c;
 }
 .method__desc {
+    width: 101.1%;
     margin-bottom: 18px;
     font-weight: 300;
     font-size: 1.6rem;
@@ -341,19 +342,13 @@ a {
     font-weight: 300;
     font-size: 1.6rem;
     line-height: 1.75;
-    color: #575f66;
-}
-.method__link:hover {
-    font-weight: 600;
-    font-size: 1.6rem;
-    line-height: 1.75;
     color: #2e80ce;
 }
 
+
 /* Feature */
 .feature {
-    margin-top: 170px;
-    margin-bottom: 170px;
+    padding: 170px 0;
     background: #fff;
 }
 .feature__body {
@@ -396,7 +391,7 @@ a {
 
 /* Member */
 .member {
-    margin-top: 253px;
+    padding-top: 83px;
 }
 .member__heading {
     margin-bottom: 38px;
