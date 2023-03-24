@@ -354,22 +354,8 @@ a {
 .feature__body {
     display: flex;
 }
-.feature__img {
+.feature__image {
     position: relative;
-}
-.feature__info {
-    margin-left: 188px;
-}
-.feature__title {
-    margin-top: 82px;
-    margin-bottom: 18px;
-}
-.feature__desc {
-    margin-bottom: 38px;
-    font-weight: 300;
-    font-size: 1.8rem;
-    line-height: 1.67;
-    color: #575f66;
 }
 .feature__img--1 {
     width: 512px;
@@ -387,6 +373,16 @@ a {
     border-radius: 6px;
     right: -58px;
     top: 121px;
+}
+.feature__info {
+    margin-left: 188px;
+}
+.feature__heading {
+    margin-top: 82px;
+    margin-bottom: 18px;
+}
+.feature__desc {
+    margin-bottom: 38px;    
 }
 
 /* Member */
