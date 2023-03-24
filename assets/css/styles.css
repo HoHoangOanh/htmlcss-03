@@ -476,36 +476,34 @@ a {
     padding-bottom: 170px;
 }
 .install__body {
-    height: 427px;
     background: var(--dark-bg);
-    display: flex;
-    padding-top: -95px;
-    padding-left: 70px;
-    padding-right: 70px;
-    padding-bottom: 75px;
     border-radius: 4px;
+    display: flex;
+    padding: 0 70px;
 }
 .install__img {
+    display: block;
     margin-top: -95px;
+    width: 284px;
+    height: 522px;
+    object-fit: cover;
 }
 .install__content {
     margin-left: 160px;
     padding-top: 76px;
 }
-.install__header {
+.install__heading {
+    width: 489px;    
     margin-bottom: 18px;
     color: #ffffff;
 }
-.install__desc {
-    font-weight: 300;
-    font-size: 1.8rem;
-    line-height: 1.67;
+.install__desc {    
     color: #ffffff;
     margin-bottom: 38px;
 }
 .install__action {
     display: flex;
-    gap: 30px;
+    column-gap: 28px;
 }
 
 /* News */
