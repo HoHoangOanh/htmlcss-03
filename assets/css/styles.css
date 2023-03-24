@@ -388,15 +388,16 @@ a {
 /* Member */
 .member {
     padding-top: 83px;
-}
-.member__heading {
-    margin-bottom: 38px;
     text-align: center;
 }
-.member__btn {
-    display: inline-block;
-    margin-left: calc(50% - 102.5px);
+.member__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 70px;
+}
+.member__btn {
+    margin-top: 38px;
 }
 .member__list {    
     margin-bottom: 38px;
@@ -405,8 +406,7 @@ a {
     column-gap: 30px;    
 }
 .member__item {
-    display: block;
-    
+    display: block;    
 }
 .member__img--bg {
     padding-top: 28px;
@@ -431,17 +431,15 @@ a {
 }
 .member__name {
     margin-top: 12px;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 1.6rem;
     line-height: 1.75;
-    text-align: center;
     color: #10375c;
 }
 .member__university {
     font-weight: 300;
     font-size: 1.4rem;
-    line-height: 1.86;
-    text-align: center;
+    line-height: 1.86;    
     color: #575f66;
 }
 .member__action {
@@ -453,19 +451,17 @@ a {
 }
 .member__action--left,
 .member__action--right {
-    width: 36px;
-    height: 36px;
-    border: 1px solid #575f66;
-    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.member__action--left {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid #575f66;
+    outline: none;
     color: #575f66;
-}
-.member__action--right {
-    color: #575f66;
+    background: #fff;
+    transition: 0.25s;
 }
 .member__action--left:hover,
 .member__action--right:hover {
